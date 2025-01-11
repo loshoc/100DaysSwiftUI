@@ -11,6 +11,9 @@
 		9C390F462D314FCA0078A2E4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C390F452D314FCA0078A2E4 /* ContentView.swift */; };
 		9C390F482D314FCB0078A2E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C390F472D314FCB0078A2E4 /* Assets.xcassets */; };
 		9C390F4B2D314FCB0078A2E4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C390F4A2D314FCB0078A2E4 /* Preview Assets.xcassets */; };
+		9C8D944F2D320AFE006BF57B /* DaysListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8D944E2D320AFE006BF57B /* DaysListView.swift */; };
+		9C8D94512D320B37006BF57B /* DayDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8D94502D320B37006BF57B /* DayDetailView.swift */; };
+		9C8D94542D321158006BF57B /* Day1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8D94532D321158006BF57B /* Day1View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		9C390F452D314FCA0078A2E4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9C390F472D314FCB0078A2E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C390F4A2D314FCB0078A2E4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9C8D944E2D320AFE006BF57B /* DaysListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysListView.swift; sourceTree = "<group>"; };
+		9C8D94502D320B37006BF57B /* DayDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayDetailView.swift; sourceTree = "<group>"; };
+		9C8D94532D321158006BF57B /* Day1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day1View.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +57,13 @@
 		9C390F422D314FCA0078A2E4 /* 100DaysSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				9C8D94522D321137006BF57B /* Practice */,
 				9C390F432D314FCA0078A2E4 /* _00DaysSwiftUIApp.swift */,
 				9C390F452D314FCA0078A2E4 /* ContentView.swift */,
 				9C390F472D314FCB0078A2E4 /* Assets.xcassets */,
 				9C390F492D314FCB0078A2E4 /* Preview Content */,
+				9C8D944E2D320AFE006BF57B /* DaysListView.swift */,
+				9C8D94502D320B37006BF57B /* DayDetailView.swift */,
 			);
 			path = 100DaysSwiftUI;
 			sourceTree = "<group>";
@@ -65,6 +74,14 @@
 				9C390F4A2D314FCB0078A2E4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9C8D94522D321137006BF57B /* Practice */ = {
+			isa = PBXGroup;
+			children = (
+				9C8D94532D321158006BF57B /* Day1View.swift */,
+			);
+			path = Practice;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -111,6 +128,9 @@
 				Base,
 			);
 			mainGroup = 9C390F372D314FCA0078A2E4;
+			packageReferences = (
+				9C9637382D31521100193D80 /* XCRemoteSwiftPackageReference "100DaysSwiftUI" */,
+			);
 			productRefGroup = 9C390F412D314FCA0078A2E4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,7 +157,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C8D944F2D320AFE006BF57B /* DaysListView.swift in Sources */,
+				9C8D94542D321158006BF57B /* Day1View.swift in Sources */,
 				9C390F462D314FCA0078A2E4 /* ContentView.swift in Sources */,
+				9C8D94512D320B37006BF57B /* DayDetailView.swift in Sources */,
 				9C390F442D314FCA0078A2E4 /* _00DaysSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,6 +367,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9C9637382D31521100193D80 /* XCRemoteSwiftPackageReference "100DaysSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/loshoc/100DaysSwiftUI";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 9C390F382D314FCA0078A2E4 /* Project object */;
 }
