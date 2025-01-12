@@ -16,6 +16,8 @@ struct DayDetailView: View {
             switch dayNumber {
             case 1:
                 Day1View()
+            case 2:
+                Day2View()
             default:
                 Text("Coming soon!")
             }

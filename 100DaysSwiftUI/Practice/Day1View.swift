@@ -18,7 +18,7 @@ struct Day1View: View {
             .bold()
             .foregroundStyle(
                 LinearGradient(
-                    colors: [.blue, .purple, .red, .blue],
+                    colors: [.blue, .purple, .white, .blue],
                     startPoint: UnitPoint(x: offset, y: 0),
                     endPoint: UnitPoint(x: offset + 1, y: 0)
                 )
