@@ -23,8 +23,8 @@ struct Day2View: View {
                     .stroke(
                         AngularGradient(
                             colors: [
-                                .green.opacity(0.2),  // Light green
-                                .green.opacity(0.5),  // Medium green
+                                .green.opacity(0.2),
+                                .green.opacity(0.5),
                                 .green.opacity(0.8),
                             ],
                             center: .center,
@@ -55,15 +55,18 @@ struct Day2View: View {
                 
                 // Display progress value
                 Text("\(Int(progress * 100))%")
-                    .font(.largeTitle)
-                    .bold()
+                    .font(.title)
                     .foregroundStyle(Color.green)
             }
             .frame(width: 240, height: 240)
             .padding()
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(.green.opacity(0.05))
+        .background(
+            Color.green.opacity(
+                0.05 + (progress * 0.1) // This will range from 0.05 to 0.20 as progress goes from 0 to 1
+            )
+        )
     }
 }
 
