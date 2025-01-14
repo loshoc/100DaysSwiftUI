@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9C08CE4B2D355792005A09DA /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C08CE4A2D35578A005A09DA /* ColorExtensions.swift */; };
+		9C08CE4D2D369510005A09DA /* Day4View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C08CE4C2D369510005A09DA /* Day4View.swift */; };
 		9C390F442D314FCA0078A2E4 /* _00DaysSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C390F432D314FCA0078A2E4 /* _00DaysSwiftUIApp.swift */; };
 		9C390F462D314FCA0078A2E4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C390F452D314FCA0078A2E4 /* ContentView.swift */; };
 		9C390F482D314FCB0078A2E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C390F472D314FCB0078A2E4 /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		9C08CE4A2D35578A005A09DA /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
+		9C08CE4C2D369510005A09DA /* Day4View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day4View.swift; sourceTree = "<group>"; };
 		9C390F402D314FCA0078A2E4 /* 100DaysSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 100DaysSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C390F432D314FCA0078A2E4 /* _00DaysSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _00DaysSwiftUIApp.swift; sourceTree = "<group>"; };
 		9C390F452D314FCA0078A2E4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				9C8D94532D321158006BF57B /* Day1View.swift */,
 				9CB9B91B2D335370000FD7A0 /* Day2View.swift */,
 				9CB9B91D2D353393000FD7A0 /* Day3View.swift */,
+				9C08CE4C2D369510005A09DA /* Day4View.swift */,
 			);
 			path = Practice;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 				9C8D94542D321158006BF57B /* Day1View.swift in Sources */,
 				9C390F462D314FCA0078A2E4 /* ContentView.swift in Sources */,
 				9C8D94512D320B37006BF57B /* DayDetailView.swift in Sources */,
+				9C08CE4D2D369510005A09DA /* Day4View.swift in Sources */,
 				9CB9B91E2D353393000FD7A0 /* Day3View.swift in Sources */,
 				9CB9B91C2D335370000FD7A0 /* Day2View.swift in Sources */,
 				9C390F442D314FCA0078A2E4 /* _00DaysSwiftUIApp.swift in Sources */,

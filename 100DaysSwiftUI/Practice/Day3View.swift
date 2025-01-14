@@ -13,13 +13,13 @@ struct Day3View: View {
     var body: some View {
         if #available(iOS 18.0, *) {
             MeshGradient(width: 3, height: 3, points: [
-                [0.0, 0.2], [0.5, 0.2], [1.0, 0.2],
-                [0.0, 0.5], [isAnimating ? 0.3 : 0.8, isAnimating ? 0.3 : 0.6], [1.0, isAnimating ? 0.6 : 0.3],
-                [0.0, 1.0], [0.5, 1.0], [1.0, 1.0]
+                [0.0, 0.0], [0.5, 0.0], [1.0, 0.0],
+                [0.0, 0.7], [isAnimating ? 0.3 : 0.6, isAnimating ? 0.4 : 0.7], [1.0, isAnimating ? 0.8 : 0.4],
+                [0.0, 1.0], [isAnimating ? 0.2 : 0.6, 1.0], [1.0, 1.0]
             ], colors: [
-                .white, .white, .white,
-                .mint, Color(hex: "40E0D0"), .mint,  // Turquoise color in the middle
-                Color(hex: "00BFFF"), .blue, .blue   // DeepSkyBlue to blue at bottom
+                Color(hex: "FFFDF1"), Color(hex: "FFFDF1"), Color(hex: "FFFDF1"),
+                Color(hex: "6DCBA7"), Color(hex: "6DCBA7"), Color(hex: "48D6C6"),  // Turquoise color in the middle
+                Color(hex: "55BFCC"), Color(hex: "84D8C8"), Color(hex: "95E2CE")   // DeepSkyBlue to blue at bottom
             ])
             .edgesIgnoringSafeArea(.all)
             .onAppear() {
