@@ -15,7 +15,7 @@ struct Day4View: View {
                 
                 MeshGradient(width: 3, height: 3, points: [
                     [0.0, 0.0], [0.5, 0.0], [1.0, 0.0],
-                    [0.0, 0.7], [isAnimating ? 0.2 : 0.8, isAnimating ? 0.4 : 0.8], [1.0, isAnimating ? 0.8 : 0.4],
+                    [0.0, 0.7], [isAnimating ? 0.2 : 0.8, isAnimating ? 0.2 : 0.8], [1.0, isAnimating ? 0.8 : 0.1],
                     [0.0, 1.0], [isAnimating ? 0.2 : 0.6, 1.0], [1.0, 1.0]
                 ], colors: [
                     Color(hex: "FFFDF1"), Color(hex: "FFFDF1"), Color(hex: "FFFDF1"),
