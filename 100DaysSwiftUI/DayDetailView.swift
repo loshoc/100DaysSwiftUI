@@ -18,6 +18,16 @@ struct DayDetailView: View {
                 Day1View()
             case 2:
                 Day2View()
+            case 3:
+                Day3View()
+            case 4:
+                Day4View()
+            case 5:
+                Day5View()
+            case 6:
+                Day6View()
+            case 7:
+                Day7View()
             default:
                 Text("Coming soon!")
             }

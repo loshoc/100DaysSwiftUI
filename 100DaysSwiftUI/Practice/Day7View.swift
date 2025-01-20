@@ -24,6 +24,15 @@ struct Day7View: View {
     
     var body: some View {
         ZStack {
+            // Background color and image
+            Color(hex: "000000")
+                .ignoresSafeArea()
+            
+            Image("kiwi")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 200)
+            
             // First rectangle (outermost)
             Rectangle()
                 .foregroundColor(.clear)
@@ -76,7 +85,6 @@ struct Day7View: View {
                 ) 
                 .blur(radius: 1)
         }
-        .background(Color.black)
         .ignoresSafeArea()
         .onAppear {
             let timer = Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true) { _ in
@@ -88,7 +96,7 @@ struct Day7View: View {
     
     private func updateLocations() {
         gradientLocations = gradientLocations.map { location in
-            var newLocation = location + 0.02
+            var newLocation = location + 0.04
             if newLocation > 1.0 {
                 newLocation = 0.0
             }
