@@ -25,14 +25,14 @@ struct Day8View: View {
                     .foregroundColor(.primary) // Adjust the color as needed
                     .symbolRenderingMode(.monochrome)
                     .offset(y: isAnimating ? -10 : 0) // Move up by 10 pixels
-                    .animation(.easeInOut(duration: 0.5).repeatForever(autoreverses: true), value: isAnimating)
+                    .animation(.easeInOut(duration: 0.3).repeatForever(autoreverses: true), value: isAnimating)
                     .onAppear {
                         isAnimating = true
-                        Timer.scheduledTimer(withTimeInterval: 1.1, repeats: true) { _ in
-                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+                        Timer.scheduledTimer(withTimeInterval: 0.7, repeats: true) { _ in
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
                                 currentSymbolIndex = (currentSymbolIndex + 1) % symbols.count
                             }
-                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
                                 splashEffect.toggle()
                             }
                         }
@@ -43,7 +43,7 @@ struct Day8View: View {
                     .frame(width: isAnimating ? 60 : 40, height: isAnimating ? 25 : 20) // Animate width change
                     .blur(radius: 10) // Adjust blur radius as needed
                     .offset(y: -25) // Adjust vertical position as needed
-                    .animation(.easeInOut(duration: 0.5).repeatForever(autoreverses: true), value: isAnimating)
+                    .animation(.easeInOut(duration: 0.3).repeatForever(autoreverses: true), value: isAnimating)
                 
             }
         }
